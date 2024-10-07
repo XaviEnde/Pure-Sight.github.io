@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="card">
+        <div class="headerBanner">
+            <div class="logo"><a href="index.html"><img src="img/PureSight.png" alt="PureSight Logo"></a></div>
+       
+            <button onclick="showCartItems()" class="shopincartBtn">🛒</button>
+        </div>
+        
+        
+
+        <div id="cartFlex" class="cartFlex">
+            
+
+            <div id="cartItems">
+
+            </div>
+            
+            <div class="total">
+                <div id="totalItems" class="totalItems">Items: 0</div>
+                <div id="totalPrice" class="totalPrice">Price: $0</div>
+                <div id="checkoutDiv"></div>
+            </div>
+            
+
+        </div>
+    </section>
+
+
+
+
+    <section id="shop" class="shop">
+        <div class="cardContainer__shop">
+
+
+            <div class="cards" id="card1">
+                 <div class="cardOverlay1">
+                    <img src="img/glas1.webp" alt="PureSight glasses">
+                    <div class="overlayCards">
+                            <div class="CartPrice">
+                                    <div>glasses 1</div>
+                                    <div class="price">$40</div>
+                                </div>
+                                <div class="CartBtns">
+                                        <button class="glasses1Btn" onclick="addItem1()">add to cart</button>
+                                
+                                <div class="colarContainer">
+                                    <div>
+                                        <button><div class="colar1"></div></button>
+                                        <button><div class="colar2"></div></button>
+                                        <button><div class="colar3"></div></button>
+                                    </div>
+                                </div>
+                                </div>     
+                        </div>
+                </div>
+                 
+                <img class="img" src="img/glas1.webp" alt="Glasses 1">
+                <span class="cardContent">Glasses 1</span>
+            </div>
+            <div class="cards" id="card2">
+                 <div class="cardOverlay1">
+                    <img src="img/glas2.webp" alt="PureSight glasses">
+                        <div class="overlayCards">
+                            
+                            
+                            
+                            <div class="CartPrice">
+                                <div>glasses 2</div>
+                                <div class="price">$90</div>
+                            </div>
+                            <div class="CartBtns">
+                                <button onclick="addItem2()" class="glasses2Btn">add to cart</button>
+                            
+                            <div class="colarContainer">
+                                <div>
+                                    <button><div class="colar1"></div></button>
+                                    <button><div class="colar2"></div></button>
+                                    <button><div class="colar3"></div></button>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </div>
+                 </div>
+                 
+                <img class="img" src="img/glas2.webp" alt="Glasses 1">
+                <span class="cardContent">Glasses 2</span>
+            </div>
+            <div class="cards" id="card3">
+                 <div class="cardOverlay1">
+                    <img src="img/glas3.webp" alt="PureSight glasses">
+                    <div class="overlayCards">
+                                        
+                                        
+                                        
+                                        <div class="CartPrice">
+                                            <div>glasses 3</div>
+                                            <div class="price">$60</div>
+                                        </div>
+                                        <div class="CartBtns">
+                                            <button onclick="addItem3()" class="glasses3Btn">add to cart</button>
+                                        
+                                        <div class="colarContainer">
+                                            <div>
+                                                <button><div class="colar1"></div></button>
+                                                <button><div class="colar2"></div></button>
+                                                <button><div class="colar3"></div></button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                 </div>
+                 
+                <img class="img" src="img/glas3.webp" alt="Glasses 1">
+                <span class="cardContent">Glasses 3</span>
+            </div>
+            <div class="cards" id="card4">
+                 <div class="cardOverlay1">
+                    <img src="img/glas1.webp" alt="PureSight glasses">
+                    <div class="overlayCards">
+                                        
+                                        
+                                        
+                                        <div class="CartPrice">
+                                            <div>glasses 4</div>
+                                        <div class="price">$90</div>
+                                        </div>
+                                        <div class="CartBtns">
+                                             <button onclick="addItem1()" class="glasses1Btn">add to cart</button>
+                                       
+                                        <div class="colarContainer">
+                                            <div>
+                                                <button><div class="colar1"></div></button>
+                                                <button><div class="colar2"></div></button>
+                                                <button><div class="colar3"></div></button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                       
+                                    </div>
+                 </div>
+                 
+                <img class="img" src="img/glas1.webp" alt="Glasses 1">
+                <span class="cardContent">Glasses 4</span>
+            </div>
+            <div class="cards" id="card5">
+                 <div class="cardOverlay1">
+                    <img src="img/glas2.webp" alt="PureSight glasses">
+                    <div class="overlayCards">
+                                        
+                                        
+                                        
+                                        <div class="CartPrice">
+                                            <div>glasses 5</div>
+                                            <div class="price">$40</div>   
+                                        </div>
+                                        <div class="CartBtns">
+                                            <button onclick="addItem2()" class="glasses2Btn">add to cart</button>
+                                        
+                                        <div class="colarContainer">
+                                            <div>
+                                                <button><div class="colar1"></div></button>
+                                                <button><div class="colar2"></div></button>
+                                                <button><div class="colar3"></div></button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                 </div>
+                 
+                <img class="img" src="img/glas2.webp" alt="Glasses 1">
+                <span class="cardContent">Glasses 5</span>
+            </div>
+            <div class="cards" id="card6">
+                 <div class="cardOverlay1">
+                      <img src="img/glas3.webp" alt="PureSight glasses">
+                    <div class="overlayCards">
+                                        
+                                      
+                                        
+                                        <div class="CartPrice">
+                                            <div>glasses 6</div>
+                                            <div class="price">$60</div>
+                                        </div>
+                                        <div class="CartBtns">
+                                            <button onclick="addItem3()" class="glasses3Btn">add to cart</button>
+                                        
+                                        <div class="colarContainer">
+                                            <div>
+                                                <button><div class="colar1"></div></button>
+                                                <button><div class="colar2"></div></button>
+                                                <button><div class="colar3"></div></button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                 </div>
+                 
+                <img class="img" src="img/glas3.webp" alt="Glasses 1">
+                <span class="cardContent">Glasses 6</span>
+            </div>
+            <div class="cards" id="card7">
+                 <div class="cardOverlay1">
+                    <img src="img/glas1.webp" alt="PureSight glasses">
+                    <div class="overlayCards">
+                                        
+                                        
+                                        
+                                        <div class="CartPrice">
+                                            <div>glasses 7</div>
+                                            <div class="price">$90</div>
+                                        </div>
+                                        <div class="CartBtns">
+                                            <button onclick="addItem1()" class="glasses1Btn">add to cart</button>
+                                        
+                                        <div class="colarContainer">
+                                            <div>
+                                                <button><div class="colar1"></div></button>
+                                                <button><div class="colar2"></div></button>
+                                                <button><div class="colar3"></div></button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                 </div>
+                 
+                <img class="img" src="img/glas1.webp" alt="Glasses 1">
+                <span class="cardContent">Glasses 7</span>
+            </div>
+            <div class="cards" id="card8">
+                 <div class="cardOverlay1">
+                    <img src="img/glas2.webp" alt="PureSight glasses">
+                    <div class="overlayCards">
+                                        <div class="CartPrice">
+                                            <div>glasses 8</div>
+                                            <div class="price">$40</div>
+                                        </div>
+                                        <div class="CartBtns">
+                                            <button onclick="addItem2()" class="glasses2Btn">add to cart</button>
+                                        
+                                        <div class="colarContainer">
+                                            <div>
+                                                <button><div class="colar1"></div></button>
+                                                <button><div class="colar2"></div></button>
+                                                <button><div class="colar3"></div></button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                 </div>
+                 
+                <img class="img" src="img/glas2.webp" alt="Glasses 1">
+                <span class="cardContent">Glasses 8</span>
+            </div>
+          
+        </div>
+       
+    </section>
+
+    <footer class="shopFooter">
+        <a href="index.html">HomePage</a>
+        <a href="#">&copy;PureSight</a>
+        <a href="#">Privacy Policy</a>
+    </footer>
+
+
+
+    <script src="shop.js"></script>
+    
+</body>
+</html>

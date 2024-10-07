@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    
+    <title>PureSight</title>
+</head>
+<body>
+<header>
+    <!-- NAV -->
+    <nav>
+        <div>
+            <img src="img/PureSight.png" alt="PureSight Logo">
+        </div>
+        <div id="navLinks" class="navLinks">
+            <a href="#info">About us</a>
+            <a href="#shop">Products</a>
+            <a href="#CTAsection">More</a>
+        </div>
+        <div class="navBtns">
+            <a href="login.html" id="login">Login</a>
+            <button id="menuBtn" class="menuBtn">≡</button>
+        </div>
+    </nav>
+    
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="heroContent">
+            <h1 class="hero__h1">Protect your eyes with PureSight glasses</h1>
+            <p class="hero__p">experience the benefits of blue light blocking glasses and reduce eye strain</p>
+            <div class="hero__btns">
+                <a href="shop.html" id="shopBtn" class="shop-btn">Shop</a>
+                <a href="#info">Learn more</a>
+            </div>
+        </div>
+         <div class="overlay"></div>
+    </section>
+   
+</header>
+    
+    <main>    
+    <!-- SHOP SECTION -->
+        <section id="shop" class="shop">
+            <div class="cardContainer">
+                <div class="cards"><img src="img/glas1.webp" alt="Glasses 1"><span class="cardContent">Glasses 1</span></div>
+                <div class="cards"><img src="img/glas2.webp" alt="Glasses 1"><span class="cardContent">Glasses 2</span></div>
+                <div class="cards"><img src="img/glas3.webp" alt="Glasses 1"><span class="cardContent">Glasses 3</span></div>
+            </div>
+            <a href="shop.html" class="shopBtn">Shop</a>
+        </section>
+
+    
+        <!-- INFO -->
+        <section id="info" class="info">
+            <h2 class="info__h2">Discover our styling and effective blue light blocking glasses</h2>
+            <div class="info__content">
+                <div class="info__text">
+                    <p class="info__p">Protect your eyes and sleep better with our premium blue light blocking glasses. Experience the difference today.</p>
+                    <div class="info__ol">
+                        <div class="li">
+                            <div class="liCheck">✓</div>
+                            <div class="liContent">Relieve eye strain and improve sleep quality.</div>
+                        </div>
+                        <div class="li">
+                            <div class="liCheck">✓</div>
+                            <div class="liContent">stylisch frames for all-day comfort and protection.</div>
+                        </div>
+                        <div class="li">
+                            <div class="liCheck">✓</div>
+                            <div class="liContent">High-qulity lenses that block harmful blue light</div>
+                        </div>
+                    </div>
+                </div>
+            <img class="info__img" src="img/Screenshot 2024-06-06 082408.png" alt="Our bluelight blockers">
+        </div>
+        </section>
+        
+        <!-- CLIENT EXPERINECES -->
+        <section class="client-experience">
+            <h2>Client Experiences</h2>
+            <div class="client-container">
+                <div id="clientCard" class="client-experience__card1">
+                    <div class="cardOverlay">Watch review</div>
+                </div>
+                
+                <div id="clientCard" class="client-experience__card2">
+                    <div class="cardOverlay">Watch review</div>
+            </div>
+                
+            </div>
+        </section>
+
+        <!-- Call To Action -->
+        <section id="CTAsection" class="CTAsection">
+            <h2>Discover Our Premium Eyewear</h2>
+
+            <div class="CTAcontent">
+                <p>Protect your eyes from harmful blue light with our stylish and effective glasses</p>
+                <div class="btnContainer">
+                    <a href="shop.html" class="CTAsection__shopbtn shopbtn1">Shop</a>
+                    <a href="#footer" class="CTAsection__shopbtn">Contact</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <ul>
+                <li class="listTitle">Menu</li>
+                <li>Shipping information</li>
+                <li>FAQ</li>
+                <li>Support Centre</li>
+                <li>Terms & Conditions</li>
+            </ul>
+
+            <form class="footer__form" id="footer__form">
+                <h3>Contact Us</h3> 
+                <input type="text" required placeholder="Name..."> <br>
+                <input type="email" required placeholder="Email..."> <br>
+                <textarea name="message" id="msgArea" required placeholder="Message..."></textarea><br>
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">&copy; 2024 PureSight. All rights reserved</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookies Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,709 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+/* GENERAL STYLES */
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2{
+    font-family: "Cinzel", serif;
+    font-size: 2.5rem;
+}
+
+body{
+    font-family: "Source Serif 4", serif;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    transform: scale(1.06);
+    transition: 0.4s ease-out;
+}
+button:hover{
+    transform: scale(1.07);
+    transition: 0.4s ease-out;
+}
+
+
+/* NAV */
+nav{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+nav div{
+    margin: 0px 25px
+}
+nav img{
+    width: 125px;
+    height: auto
+}
+
+.navLinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    left: -150%;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+
+.navBtns{
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#login{
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 6.8px 20px;
+    max-height: 36px;
+    border-radius: 3px;
+    display: block;
+}
+.menuBtn{
+    border: none;
+    min-height: 36px;
+    min-width: 36px;
+    font-size: 1.4rem;
+    background-color: rgb(207, 207, 207);
+    border-radius: 3px;
+}
+
+header .linksMenu{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    flex-direction: column;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    margin:0;
+    left: 0;
+    transition: .3s;
+}
+
+
+
+
+.linksMenu a {
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1px solid grey;
+}
+
+.linksMenu a:hover{
+    background-color: rgb(234, 232, 232);
+}
+
+.linksMenu a:nth-child(1){
+    border-top: 1px solid grey
+}
+
+.linksMenu a{
+    display: block;
+}
+
+.linksMenu a:hover{
+    transform: none;
+}
+
+
+/* HERO */
+
+.hero{
+    position: relative;
+    min-height: 90vh;
+    background: url(img/HeroGlasses.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.overlay{
+    min-height: 90vh;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.heroContent{
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    right: 1rem;
+    color: white;
+    z-index: 2;
+}
+
+.hero__btns{
+    margin-top: 20vh;
+    width: 64%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero__btns a{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+.hero__btns .shop-btn{
+    color: white;
+    background-color: black;
+}
+
+
+/* SHOPSECTION */
+.shop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E0D7C7;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 50vw;
+}
+
+.shop img {
+    max-width: 100px;
+}
+
+.cards{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.cardContent{
+    position: absolute;
+    bottom: 7px;
+    border-top: 1px solid rgb(44, 44, 44);
+    width: 80%;
+    text-align: center;
+}
+
+.shopBtn{
+    margin-top: 2rem;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    background-color: #15245B;
+    color: white;
+    border-radius: 3px;
+}
+
+/* INFO */
+
+.info{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.info__h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.info__p{
+    margin-bottom: 2rem;
+}
+
+.info__ol{
+    margin-bottom: 2rem;
+}
+
+.liCheck{
+    display: inline;
+    background-color: #0c2c9f;
+    color: white;
+    position: absolute;
+    top:-10;
+    left:0;
+    bottom: 0;
+    padding: 6px 15px;
+    font-size: 2rem;
+    border-radius: 25px 0 0 25px;
+}
+
+.liContent{
+    display: inline;
+}
+
+.li{
+    margin: 0.8rem;
+    border: 1px solid #0c2c9f;
+    position: relative;
+    padding-left: 4rem;
+    padding-right: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-radius: 25px;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.info__img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    padding: 2%;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 10px 10px 5px rgb(206, 206, 206);
+}
+
+
+/* CLIENT EXPERIENCE */
+
+.client-experience{
+    background-color: #0C1403;
+}
+
+.client-experience h2 {
+    color: #F1E2AD;
+    text-align: center; 
+    margin-bottom: 2rem;
+    padding-top: 1.5rem
+}
+
+.client-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.client-experience__card2{
+    height: 300px;
+    width: 300px;
+    background: url(img/bluelightblockergirl.jpg);
+    background-size: cover;
+    background-position: 70%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+}
+.client-experience__card1{
+    height: 300px;
+    width: 300px;
+    background: url(img/manglasses.jpg);
+    background-size: cover;
+    background-position: 70%;
+    background-repeat: no-repeat;
+    border-radius: 20px ;
+    position: relative;
+}
+
+.client-experience__card1:hover, .client-experience__card2:hover {
+    transform: scale(1.05);
+    transition: 3s ease-out;
+    
+}
+.cardOverlay{
+    display: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.client-experience__card1:hover .cardOverlay, .client-experience__card2:hover .cardOverlay{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    border-radius: inherit;
+    background-color: rgba(0, 0, 0, 0.434);
+    transition: 0.5s;
+}
+
+
+/* CTA SECTION */
+
+
+.CTAsection {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.CTAsection h2{
+    margin-bottom: 1.5rem;
+}
+
+.CTAsection p{
+    margin-bottom: 3rem;
+}
+
+.btnContainer{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btnContainer a{
+    border: 3px solid black;
+    background-color:white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.btnContainer .shopbtn1{
+    background-color: black;
+    color: white;
+    margin-right: 0.8rem;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 2rem;
+    color: white;
+}
+.footer-content ul{
+    list-style-type: none;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+.listTitle{
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.footer-links ul{
+    border-top: 1px solid white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-top: 0.8rem;
+    padding-bottom: 1.6rem;
+}
+.footer-content ul li:hover{
+    transform: scale(1.05);
+    transition: 1s ease-out;
+}
+.footer-links ul li:hover{
+    transform: scale(1.03);
+    transition: 1s ease-out;
+}
+
+.footer-links ul li a{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.footer__form{
+    width: 70%;
+    border: 2px solid white;
+    min-height: 40vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+}
+
+.footer__form h3{
+    padding: 10px 0;
+}
+
+.footer__form input{
+    width: 85%;
+    min-height: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer__form textarea{
+    width: 85%;
+    min-height: 7rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    max-width: 85%;
+}
+
+.footer__form button {
+    border: 2px solid white;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #15245B;
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* MEDIAQUERYS WHOOHOOO */
+
+@media (min-width: 599px) {
+
+    .heroContent{
+        top: 8rem;
+        left: 4rem;
+        right: 4rem;
+    }
+
+    .cards{
+        width: 250px;
+        height: 250px;
+    }
+    .shop img{
+        max-width: 200px
+    }
+    .shopBtn{
+        margin-top: 3rem;
+        padding: 14px 40px;
+        font-size: 1rem;
+    }
+
+    .footer__form{
+        width: 50%;
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 800px){
+    .cardContainer{
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 90vw;
+        gap: 1.5rem
+    }
+}
+
+
+@media (min-width: 1000px) {
+
+    
+    p{
+        font-size: 1.3rem;
+    }
+
+    .navLinks{
+        display: flex;
+    }
+    .navLinks a{
+        display: block;
+        padding: 10px
+    }
+
+    .navLinks a:hover{
+        scale: 1.1;
+        font-weight: 800;
+    }
+
+
+    .menuBtn{
+        display: none;
+    }
+
+    .heroContent{
+        max-width: 55%;
+        top: 20%;
+        left: 10%;
+    }
+    .hero__btns{
+        margin-top: 2vh;
+        justify-content: flex-start;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    .hero__btns button{
+        font-size: 1rem;
+        padding: 14px 24px;
+    }
+
+    .hero__p{
+        max-width: 45ch;
+        font-size: 1.7rem;
+    }
+
+    .cards{
+        width: 200px;
+        height: 200px;
+    }
+    .shop img{
+        max-width: 150px
+    }
+   
+    .cardContainer{
+        flex-wrap: nowrap;
+        max-width: 1000px;
+        min-width: 750px;
+        justify-content: space-between;
+    }
+
+    .info__text{
+        width: 50%;
+    }
+
+    .info__content{
+        display: flex;
+    }
+
+    .client-container{
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+        padding-bottom: 4rem;
+        padding-top: 1rem;
+    }
+
+    .client-experience h2{
+        padding-top: 3rem;
+    }
+
+
+    .CTAsection{
+        display: flex;
+        gap: 1rem;
+        min-height: 30vh;
+        align-items: center;
+    }
+
+    .CTAsection h2{
+        width: 50%;
+        margin: 0;
+    }
+
+    .CTAcontent{
+        width: 50%;
+    }
+
+    .CTAcontent p {
+        margin-bottom: 1rem;
+        margin: 0;
+    }
+    
+    .btnContainer{
+        text-align: start;
+        margin-top: 1.3rem;
+        
+    }
+
+    .footer__form{
+        width:40%;
+    }
+
+    .footer-links ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1200px){
+    .heroContent{
+        top: 22%;
+        left: 9%;
+        max-width: 60%;
+    }
+    .hero__h1{
+        font-size: 3.5rem;
+    }
+    
+    .footer-content{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

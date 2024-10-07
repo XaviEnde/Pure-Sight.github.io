@@ -1,0 +1,257 @@
+/* GENERAL STYLES */
+
+body{
+    min-height: 200vh;
+}
+
+/* HEADER */
+
+.logo img{
+    max-height: 50px;
+    width: auto;
+}
+.headerBanner{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.shopincartBtn{
+    margin-right: 10px;
+}
+
+
+
+/* SHOPPINGCART */
+.CartPrice{
+    line-height: 1.2;
+}
+.price{
+    font-size: 1.2rem;
+}
+
+.CartBtns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemDiv1{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.priceDiv1{
+    display: inline;
+    position: absolute;
+    left: 100px;
+}
+.itemDiv2{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.priceDiv2{
+    display: inline;
+    position: absolute;
+    left: 100px;
+}
+.itemDiv3{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.priceDiv3{
+    display: inline;
+    position: absolute;
+    left: 100px;
+}
+
+.cartFlex{
+    display: none;
+    
+}
+
+.displayTotal{
+    display: block;     /* makes cart visible with JS */
+}
+
+#cartItems{
+    margin-left: 2.5rem;
+    padding-top: 1rem;
+    display: none;
+}
+
+.total{
+    font-size: 1.3rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+    padding-left: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+
+
+
+
+/* SHOP */
+
+.shop{
+    background-color: rgb(245, 245, 245);
+}
+
+.cardContainer__shop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 2.5rem;
+}
+
+
+
+
+/* SHOPCARDS */
+.colar1{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: rgb(75, 46, 16);
+    outline: none;   
+}
+.colar2{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    outline: none;   
+}
+.colar3{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: rgba(199, 201, 214, 0.684);
+    outline: none;
+}
+
+.glasses1Btn, .glasses2Btn, .glasses3Btn{
+    background-color: rgb(32, 32, 135);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.cards{
+    width: 300px;
+    height: 300px;
+    font-size: 2rem;
+    position: relative;
+}
+
+.cards .img{
+    max-width: 200px;
+    height: auto;
+}
+
+.cardOverlay1{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+ .overlayCards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    width: 90%;
+}
+
+.cards:hover .cardOverlay1{
+    opacity: 1;
+    transition: 0.7s;
+    
+}
+
+.cardOverlay1 img{ 
+    max-height: auto;
+    max-width: 200px;
+}
+
+.cards:hover{
+    transform: none;
+}
+
+.cartImg{
+    height: auto;
+    max-width: 80px;
+}
+
+.shopFooter{
+    background-color: white;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+.shopFooter a{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERYS */
+
+@media (min-width: 750px){
+   
+    .cardContainer__shop{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
